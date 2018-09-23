@@ -6824,3 +6824,31 @@ Processing by PostsController#index as
   Rendered posts/_post.html.erb (0.2ms)
   Rendered posts/_post.html.erb (0.2ms)
   Rendered posts/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 485ms (Views: 476.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 98.155.218.104 at 2018-09-23 00:08:28 +0000
+Cannot render console from 98.155.218.104! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 98.155.218.104 at 2018-09-23 00:08:28 +0000
+Cannot render console from 98.155.218.104! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 98.155.218.104 at 2018-09-23 00:08:28 +0000
+Cannot render console from 98.155.218.104! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 98.155.218.104 at 2018-09-23 00:08:28 +0000
+Cannot render console from 98.155.218.104! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 98.155.218.104 at 2018-09-23 00:08:28 +0000
+Cannot render console from 98.155.218.104! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/new" for 98.155.218.104 at 2018-09-23 00:08:36 +0000
+Cannot render console from 98.155.218.104! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (48.7ms)
+Completed 200 OK in 76ms (Views: 73.7ms | ActiveRecord: 0.0ms)
