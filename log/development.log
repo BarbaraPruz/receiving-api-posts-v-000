@@ -6887,3 +6887,28 @@ Processing by PostsController#show as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "18"]]
   Rendered posts/show.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 31ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 98.155.218.104 at 2018-09-23 00:14:32 +0000
+Cannot render console from 98.155.218.104! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 98.155.218.104 at 2018-09-23 00:14:34 +0000
+Cannot render console from 98.155.218.104! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 98.155.218.104 at 2018-09-23 00:14:52 +0000
+Cannot render console from 98.155.218.104! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ivp9ThVfxlD63GTjO+exE9wFekIPzxR5O/shL3bJ0T0Kp1zg35CEI2YV/y+qq1lW2thRz6ym1eaSSnbQlPQHsA==", "post"=>{"title"=>"test post done()", "description"=>"asdfads"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "test post done()"], ["description", "asdfads"], ["created_at", "2018-09-23 00:14:52.209831"], ["updated_at", "2018-09-23 00:14:52.209831"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://165.227.16.205:37795/posts/19
+Completed 302 Found in 5ms (ActiveRecord: 2.5ms)
