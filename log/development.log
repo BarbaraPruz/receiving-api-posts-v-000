@@ -6953,3 +6953,21 @@ Cannot render console from 98.155.218.104! Allowed networks: 127.0.0.1, ::1, 127
 Processing by PostsController#new as HTML
   Rendered posts/new.html.erb within layouts/application (2.1ms)
 Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 98.155.218.104 at 2018-09-23 00:26:12 +0000
+Cannot render console from 98.155.218.104! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 98.155.218.104 at 2018-09-23 00:26:22 +0000
+Cannot render console from 98.155.218.104! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ovn60HoP6e1gz9A48ib1w/Ay24/QVtmCG6wQpqzrYmgSpNt+sMCrnvwGS/Rjah2G9u/wAnM/GB2yHUdZTta05Q==", "post"=>{"title"=>"test 99", "description"=>"kdsjfa;ldksfj"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "test 99"], ["description", "kdsjfa;ldksfj"], ["created_at", "2018-09-23 00:26:22.210804"], ["updated_at", "2018-09-23 00:26:22.210804"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://165.227.16.205:37795/posts/20
+Completed 200 OK in 6ms (ActiveRecord: 2.7ms)
