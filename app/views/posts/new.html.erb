@@ -19,8 +19,10 @@
       event.preventDefault();
       
       var values = $(this).serialize();
-      var posting = $.post('/posts', values);
-      posting.done(function(data) {
+      // var posting = $.post('/posts', values);
+      // posting.done(function(data) {
+      var posting = $.post('/posts', values)
+        .done(function(data) {
         // TODO: handle response
         console.log(data);
       });
